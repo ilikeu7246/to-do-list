@@ -1,0 +1,3 @@
+.form{
+    display: flex; /*같은 컨테이너안쪽에 flexible item들에 대한 속성값을 지정한다. 기본 값은 0 1 auto 이다. */
+}
