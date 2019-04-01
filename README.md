@@ -30,10 +30,35 @@
    <img width="600"alt="1" src="https://user-images.githubusercontent.com/31176502/55312843-6146ab80-54a1-11e9-9d49-19d2ec389112.png">
    </div>
    
+
     전체 래퍼 (.wrap)
     .wrap {
         display:flex;
         flex-direction: column; //default값이 row (가로 정렬)
+        position : absolute;
+        width:100%;
+        height:100%;
     }
     
+    .map_wrap{
+        flex : 1; /*flex : 0 0 1 , 확장되도록함. 
+    }
+    
+    
+    부모 box에 display:flex하면 자식 box에 flex값을 지정할 수 있다.
+       
+           flex값 속성 -> box내부의 사용가능한 공간을 분배하는 방식을 변경할 수 있음
+            - flex-grow
+              -> 값을 양수로 지정하면 flex 항목별로 주축 방향 크기가 flex-basis값 이상으로 늘어날 수 있다.
+              -> 모든 항목의 flex-grow값을 1로 지정하면 사용가능한 공간은 각 항목에게 동일하게 분배되며, 각 항목은 주축을 따라 분배받은 값만큼 사이즈를 늘려 공간을 차지한다.
+              -> 예를 들어, 첫 항목의 flex-grow값을 2로 지정하고 나머지 두 개의 항목을 1로 지정한다면 각 항목에 지정된 flew-grow값의 비율에 따라 남은 공간이 분배된다.
+                 flex-grow비율이 2:1:1 이므로 첫 항목에게 100픽셀, 두 번쨰와 세 번째 항목에게 50 픽셀씩 분배된다.
+              
+            - flex-shrink
+              -> 
+            - flex-basis
+              항목의 크기를 결정.
+              기본값 : auto
+              flex 항목에 크기가 지정되어 있지 않으면, flex항목의 내용물 크기가 flex-basis값(내용물 크기만큼, auto)으로 사용된다.
+           
    ref) https://wit.nts-corp.com/2018/07/27/5274
