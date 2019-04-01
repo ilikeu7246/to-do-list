@@ -32,4 +32,7 @@
        하위 영역들에는 heigh:calc(100% - 60px)과 같이 계산해서 지정해주는 방식으로 적용.
        또는 일정 padding을 주면서 margin을 음수로 주면서 맞추기도 했음
        
-    - 
+    <img width="801" alt="스크린샷 2019-04-01 오후 4 57 56" src="https://user-images.githubusercontent.com/31176502/55311991-  5d198e80-549f-11e9-9706-91478eb8f262.png">
+
+    
+   ref) https://wit.nts-corp.com/2018/07/27/5274
