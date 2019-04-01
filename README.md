@@ -1,14 +1,11 @@
-#To-do-List
-
- 
- ## 메인 컴포넌트 TodoListTemplate 구성
+ ## 1. 메인 컴포넌트 TodoListTemplate 구성
  components
  - TodoListTemplate.js
  - TodoListTemplate.css
   
  ref) https://velopert.com/3480
  
- ## 컴포넌트 Form 만들기
+ ## 2. 컴포넌트 Form 만들기
  인풋과 버튼이 담겨있는 컴포넌트
  
  components
@@ -22,9 +19,9 @@
   
  
  
- ## 공부한 내용 (javascript)
- ###1 비구조화 할당 (Destructuring assignment) (TodoListTemplate.js)
- ###2 css flexbox (Form.css)
+ ## * 공부한 내용 (javascript)
+ ### 1 비구조화 할당 (Destructuring assignment) (TodoListTemplate.js)
+ ### 2 css flexbox (Form.css)
    #### 1 스크롤이 없는 100% 레이아웃
     - flexbox의 필요성
        페이지 전체에는 스크롤이 없는 형태로 영역 내부에서만 스크롤이 생성된다.
