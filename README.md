@@ -29,5 +29,11 @@
    <div>    
    <img width="600"alt="1" src="https://user-images.githubusercontent.com/31176502/55312843-6146ab80-54a1-11e9-9d49-19d2ec389112.png">
    </div>
+   
+    전체 래퍼 (.wrap)
+    .wrap {
+        display:flex;
+        flex-direction: column; //default값이 row (가로 정렬)
+    }
     
    ref) https://wit.nts-corp.com/2018/07/27/5274
