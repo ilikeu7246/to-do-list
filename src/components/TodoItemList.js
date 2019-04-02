@@ -3,6 +3,7 @@
 // 그 이유는, 클래스형 컴포넌트로 작성해야 나중에 컴포넌트 성능 최적화를 할 수 있기 떄문.
 
 import React, {Component} from 'react';
+import TodoItem from "./TodoItem";
 
 class TodoItemList extends Component{
     render() {
@@ -12,7 +13,11 @@ class TodoItemList extends Component{
         //onRemove 아이템을 삭제시키는 함수
 
         return (
-            <div></div>
+            <div>
+                <TodoItem text="안녕" />
+                <TodoItem text="리엑트" />
+                <TodoItem text="반가워" />
+            </div>
         );
     }
 }
