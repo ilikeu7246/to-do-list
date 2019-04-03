@@ -45,12 +45,36 @@ class App extends Component {
         }
     }
 
+    //체크를 하거나 푸는 함수
+    //배열을 업데이트 할 때도 마찬가지로, 배열의 값을 직접 수정하면 절대 안됨.
+    handleToggle = (id) => {
+        const {todos} = this.state;
+
+        // 파라미터로 받은 id를 가지고 몇번째 아이템인지 찾는다.
+        const index = todos.findIndex(todo => todo.id === id);
+        const selected = todos[index]; //선택한 객체
+
+        const nextTodos = [...todos]; //배열을 복사
+
+        //기존의 값들을 복사하고, checked 값을 덮어쓰기
+        nextTodos[index] = {
+            ...selected,
+            checked : !selected.checked
+        };
+
+        this.setState({
+            todos: nextTodos
+        });
+
+    }
+
   render() {
         const {input, todos} = this.state;
         const {
             handleChange,
             handleCreate,
-            handleKeyPress
+            handleKeyPress,
+            handleToggle
         } = this;
         // this.handleChange, ... 이것을 비구조화 할당으로 표현.
 
@@ -63,10 +87,12 @@ class App extends Component {
               onCreate={handleCreate}
               />
         )}>
-            <TodoItemList todo={todos} />
+            <TodoItemList todo={todos} onToggle={handleToggle}/>
         </TodoListTemplate>
     );
   }
 }
 
 export default App;
+//모듈
+//export, import를 이용해 function이나 variables들을 다른 곳에서 사용할 수 있다.
