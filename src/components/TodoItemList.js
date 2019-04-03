@@ -6,6 +6,10 @@ import React, {Component} from 'react';
 import TodoItem from "./TodoItem";
 
 class TodoItemList extends Component{
+    shouldComponentUpdate(nextProps, nextState){ //컴포넌트 라이프 사이클 메소드 중, shouldComponentUpdate는 컴포넌트가 리렌더링을 할지 말지 정해줌.default === true
+        return this.props.todos !== nextProps.todos;
+    }
+
     render() {
         const {todo, onToggle, onRemove} = this.props;
         //todos todo 객체들이 들어있는 배열

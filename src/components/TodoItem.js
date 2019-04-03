@@ -10,6 +10,7 @@ class TodoItem extends Component{
         //onRemove : 아이템을 삭제시키는 함수
 
         const { text, checked, id, onToggle, onRemove } = this.props;
+        console.log(id);
 
         return(
             // onClick={onToggle{id}}이렇게 하면 해당 함수 가 렌더링 될 때 호출이 된다. 해당 함수가 호출되면 데이터가 변경 될 것이고, 데이터가 변경됨녀 또 리렌더링 되고 또 함수 호출되고 무한 반복이다.

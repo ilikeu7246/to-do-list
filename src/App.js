@@ -68,13 +68,21 @@ class App extends Component {
 
     }
 
+    handleRemove = (id) => {
+        const {todos} = this.state;
+        this.setState({
+            todos : todos.filter(todo => todo.id !== id)
+        });
+    }
+
   render() {
         const {input, todos} = this.state;
         const {
             handleChange,
             handleCreate,
             handleKeyPress,
-            handleToggle
+            handleToggle,
+            handleRemove
         } = this;
         // this.handleChange, ... 이것을 비구조화 할당으로 표현.
 
@@ -87,7 +95,7 @@ class App extends Component {
               onCreate={handleCreate}
               />
         )}>
-            <TodoItemList todo={todos} onToggle={handleToggle}/>
+            <TodoItemList todo={todos} onToggle={handleToggle} onRemove={handleRemove}/>
         </TodoListTemplate>
     );
   }
