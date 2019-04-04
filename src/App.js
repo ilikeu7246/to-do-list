@@ -75,8 +75,8 @@ class App extends Component {
         });
     }
 
-  render() {
-        const {input, todos} = this.state;
+    render() {
+        const { input, todos } = this.state;
         const {
             handleChange,
             handleCreate,
