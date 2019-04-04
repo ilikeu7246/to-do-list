@@ -15,7 +15,14 @@
       - Form.css (+)
   
    ref) https://velopert.com/3480
- 
+   
+ ## 3. todoItemList 구성하기
+    *checkbox구현
+    - && expression
+       조건이 true일 경우에는 && 이후에 위치한 expression을 반환하고, false일 경우 expression을 반환하지 않고 무시한다.
+    - 삼항연산자를 이용한 조건주기
+        조건 ? 참 : 거짓
+        
  ## * 공부한 내용 (javascript)
  ### 1. 비구조화 할당 (Destructuring assignment) (TodoListTemplate.js)
  ### 2. css flexbox (Form.css)
